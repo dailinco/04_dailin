@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/02.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+      <div class="show">
+        <div class="pic">
+          <img src="https://picsum.photos/id/27/200/300" alt="">
+        </div>
+        <div class="pic">
+          <img src="https://picsum.photos/id/56/200/300" alt="">
+        </div>
+        <div class="pic">
+          <img src="https://picsum.photos/id/1/200/300" alt="">
+        </div>
+      </div>
+    </div>
+<script>
+        const show = document.querySelector('.show');
+// console.log(show.children[0])
+let index = 0;
+
+function changeImg() {
+  show.children[index].style.height = '0px';
+  // show.children[index].style.transform = 'translateY(100%)';
+  show.children[index].style.opacity = '0';
+  
+  if(index === 2) {
+    index = 0;
+    show.children[index].style.opacity = '1';
+    show.children[index].style.height = '450px';
+    return;
+  }
+  
+  // show.children[index+1].style.transform = 'translateY(0%)';
+  // console.log('跑嗎');
+  show.children[index+1].style.opacity = '1';
+  show.children[index+1].style.height = '450px';
+  // console.log('跑嗎1');
+  index++;
+}
+setInterval(changeImg,4000);
+</script>
+</body>
+</html>

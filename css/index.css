@@ -38,22 +38,24 @@ html {
   }
 /* 最新消息 */
 .information {
-    margin-top: 25%;
     position: relative;
+	margin: 45rem 0 0 175rem;
+	/* background-color: #e11313; */
 }
-  .info_list{
-	font-size: 25px;
-  }
-
 .information .link {
-	position: absolute;
+	position: relative;
 	background-color: #ED2424;
 	color: #f5f3ed;
 	padding: 15px;
-	bottom: 30%;
-    right: 30%;
+	bottom: -80px;
+    right: -50px;
 	border-radius: 20px;
 }
+.info_list{
+	font-size: 25px;
+  }
+
+
 .date_new {
 	font-weight:bold;
 }

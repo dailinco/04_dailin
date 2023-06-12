@@ -28,6 +28,7 @@ html{
     position: absolute;
     right: 0;
     bottom: 0;
+    font-size: 20px;
     left: 0;
     padding: 20px;
     background-color: #0008;
@@ -36,12 +37,16 @@ html{
     transition: 1s;
 }        
 .card:hover .text{
+    border-radius: 20px;
     background-color: #000c;
     transform: translateY(0%);
 }
 .card img{
     width: 100%;
     vertical-align: top;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded{
+    margin-top: 115px;
 }
 .owl-carousel h2{
     justify-content: center;

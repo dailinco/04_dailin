@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/index02.css">    
+    <link rel="stylesheet" href="./css/index.css">    
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="logo">
-          <a href="./index.html">  
+          <a href="./index1.html">  
           <img src="./img/logo.png" alt="OcasO_VINTAGE"></a>
         </div>
         <div class="index_header_main">
@@ -77,6 +78,7 @@
             </div>
         </div>
     </div>
+    <!-- 最新消息 -->
     <div class="information" id="information">
         <ul class="info_list">
             <li><span class="date_new">2023年4月25日</span><a href="#" class="text">5/15~5/21免運活動</a></li>
@@ -88,7 +90,7 @@
         <div class="more">  
             <a href="" class="link">預覽更多</a>
         </div>
-    </div>
+    </div>  
     <!-- 關於我們 -->
     <div class="index_about">
         <div class="index_about_bgc" id="about"></div>
@@ -143,7 +145,7 @@
     </ul>         
     <!-- 熱門商品 -->
     <div class="owl_product">
-        <div class="owl_product_bgc"></div>
+        <div class="owl_product_bgc" id="owl"></div>
         <div class="hot" id="owl">
             <h2>熱門商品</h2>
         </div>
@@ -183,9 +185,8 @@
     </div>
     <!-- 顧客評論 -->
     <div class="comment_content">
+        <div class="comment_content_decoratered"></div>
         <h2 class="comment_text" id="comment_text">顧客評論</h2>
-        <!-- <div class="comment_content_decoratered"></div>
-        <div class="comment_content_decorate"></div> -->
         <div class="comment">
             <div class="card_list">
                 <div class="card">
@@ -312,13 +313,8 @@ window.addEventListener('load', () => {
       show.children[index+1].style.height = '900px';// 調整照片高需一樣
       index++;
     }
-    setInterval(changeImg,2000);    
+    setInterval(changeImg,1500);    
 })
-<script>
-    $('#toggle').click(function() {
-$(this).toggleClass('active');
-$('#overlay').toggleClass('open');
-});
-</script>
+</script> 
 </body>
 

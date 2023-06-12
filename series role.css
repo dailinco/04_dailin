@@ -25,6 +25,9 @@ img{
 .card .pic img{
     width: 300px;
 }
+.title h3{
+    font-weight: bolder;
+}
 [class*='col-'],
 .col{
     box-sizing: border-box; 

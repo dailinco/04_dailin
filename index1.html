@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/index02.css">    
+    <link rel="stylesheet" href="./css/index.css">    
     <title>Document</title>
+    <!-- <style>
+        body{
+            overflow-x: scroll;
+        }
+    </style> -->
 </head>
 <body>
     <header>
@@ -24,7 +30,7 @@
                 <ul class="index_header_top">
                     <li><a href="#information">關於我們</a></li>
                     <li><a href="#owl">熱門商品</a></li>
-                    <li><a href="./serious_roles.html">系列角色</a></li>
+                    <li><a href="./series-role.html">系列角色</a></li>
                     <li><a href="#comment_text">顧客評論</a></li>
                 </ul>
 
@@ -37,7 +43,7 @@
                             </a>
                         </li>
                         <li class="index_sider_top">
-                            <a href="./sign in.html" target="_blank">
+                            <a href="./sign_in.html" target="_blank">
                                 <i class="fa-solid fa-user"></i>
                                 會員
                             </a>
@@ -77,6 +83,7 @@
             </div>
         </div>
     </div>
+    <!-- 最新消息 -->
     <div class="information" id="information">
         <ul class="info_list">
             <li><span class="date_new">2023年4月25日</span><a href="#" class="text">5/15~5/21免運活動</a></li>
@@ -88,7 +95,7 @@
         <div class="more">  
             <a href="" class="link">預覽更多</a>
         </div>
-    </div>
+    </div>  
     <!-- 關於我們 -->
     <div class="index_about">
         <div class="index_about_bgc" id="about"></div>
@@ -143,10 +150,8 @@
     </ul>         
     <!-- 熱門商品 -->
     <div class="owl_product">
-        <div class="owl_product_bgc"></div>
-        <div class="hot" id="owl">
-            <h2>熱門商品</h2>
-        </div>
+        <div class="owl_product_bgc" id="owl"></div>
+        <h2 class="hot">熱門商品</h2>
         <div class="index_product_decoratered"></div>
         <button class="index_product_title">
             <a href="./all_product.html">全部商品</a>
@@ -312,13 +317,8 @@ window.addEventListener('load', () => {
       show.children[index+1].style.height = '900px';// 調整照片高需一樣
       index++;
     }
-    setInterval(changeImg,2000);    
+    setInterval(changeImg,1500);    
 })
-<script>
-    $('#toggle').click(function() {
-$(this).toggleClass('active');
-$('#overlay').toggleClass('open');
-});
-</script>
+</script> 
 </body>
 

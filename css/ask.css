@@ -1,0 +1,75 @@
+@media (max-width: 380px) { 
+  .main{
+    margin-top: 200px;
+  }
+  .name{
+    flex-direction: column;
+    display: flex;
+  }
+  .input{
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 10px 10px 10px 10px;
+    height: 30px;
+  }
+}
+
+main{
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+    main .banner .banner_title{
+    position: absolute;
+    color: #8D7B68;
+    font-weight: bolder;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50% , -120%);
+    }
+    div.contact_title{
+    width: 880px;
+    display: inline-block;
+    font-size: 24px;
+    color: rgb(227, 141, 32);
+    }
+    input{
+      display: inline-block;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      margin: 10px 10px 10px 10px;
+      height: 30px;
+    }
+    .number input{
+      width: 530px;
+      height: 30px;
+    }
+    .note textarea{
+      width: 535px;        
+      height: 200px;
+    }
+    .button{
+      background-color: #8D7B68;
+    }
+    .footer{
+      margin-top: 160px;
+    } 
+    .pic{
+      position: absolute;
+     left: 0px;
+      bottom: -160px;
+
+    }
+    .pic2{
+      position: absolute;
+      left: 1300px;
+      bottom: 170px;
+      transform: rotate(-65deg);
+    }
+    .footer{
+      margin-top: 342px;
+    }

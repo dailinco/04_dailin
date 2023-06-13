@@ -62,6 +62,18 @@ html{
     display: grid;
     justify-content: center;
 }
+.serious_roles{
+    display: flex;
+    justify-content: center;
+}
+.serious_roles a{
+    position: relative;
+	background-color: #ED2424;
+	color: #f5f3ed;
+    margin: auto;
+	padding: 15px;
+	border-radius: 20px;
+}
 .col-1{ width: 8.333333%;}
 .col-2{ width: 16.666666%;}
 .col-3{ width: 25%;}
@@ -74,7 +86,6 @@ html{
 .col-10{ width: 83.333333%;}
 .col-11{ width: 91.666666%;}
 .col-12{ width: 100%;}
-
 @media screen and (min-width:768px){
     .col-md-1{ width: 8.333333%;}
     .col-md-2{ width: 16.666666%;}
@@ -156,7 +167,15 @@ html{
     .row-cols-md-6 > .col{
         width: 16.666666%;
     }
-}
+    .serious_roles a{
+        position: relative;
+        background-color: #ED2424;
+        color: #f5f3ed;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    }
+
 @media screen and (min-width:1024px){
     .row-cols-lg-1 > .col{
         width: 100%;

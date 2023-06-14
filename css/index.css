@@ -704,9 +704,8 @@ html {
 	}
 	.card_list{
 		flex-direction: column;
-	}
-	.card_list.card{
 		width: 300px;
+		margin-left: 70px;
 	}
 	.card .text{
 		width: 200px;

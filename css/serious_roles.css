@@ -153,9 +153,7 @@ grid-area: 1/1/2/2;
     .talk_box .txt p{
         display: none;
     }
+    .pic{
+        width: 100px;
     }
-    @media screen and (min-width:768px){
-    .title h3{
-        font-size: 20px;
-    }
-    }
+}

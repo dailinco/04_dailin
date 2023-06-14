@@ -291,7 +291,7 @@ $(document).ready(function () {
 })
 });
    </script> 
-<script>
+<!-- <script>
 const show = document.querySelector('.show');
 // console.log(show.children[0])
 let index = 0;
@@ -315,6 +315,37 @@ window.addEventListener('load', () => {
     }
     setInterval(changeImg,1500);    
 })
-</script> 
+changeImg();
+</script>  -->
+<script>
+    const show = document.querySelector('.show');
+// console.log(show.children[0])
+let index = 0;
+// console.log(index);
+function changeImg() {
+  show.children[index].style.height = '0px';
+  // show.children[index].style.transform = 'translateY(100%)';
+  show.children[index].style.opacity = '0';
+  
+  if(index === 2) {
+    index = 0;
+    show.children[index].style.opacity = '1';
+    show.children[index].style.height = '900px';
+    return;
+  }
+  
+  // show.children[index+1].style.transform = 'translateY(0%)';
+  // console.log('跑嗎');
+  show.children[index+1].style.opacity = '1';
+  show.children[index+1].style.height = '900px';
+  // console.log('跑嗎1');
+  index++;
+}
+window.onload = function () {
+    console.log(123);
+}
+changeImg();
+setInterval(changeImg,1500);
+</script>
 </body>
 

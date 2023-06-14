@@ -45,6 +45,11 @@ background: #fff;
 #checkbox:checked {
     transform: scale(1.5);
 }
+.index_footer_list{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
 
 @media (max-width: 45em) {
 .tabs .tab,

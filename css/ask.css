@@ -1,11 +1,131 @@
+main{
+margin-top: 190px;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+.name input,.phone input{
+  height: 20px;
+  width: 400px;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 20px 20px 0;
+  border-radius: 10px;
+}
+.number input{
+  height: 20px;
+  width: 860px;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 20px 20px 0;
+  border-radius: 10px;
+}
+.note textarea{
+  height: 500px;
+  width: 860px;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 20px 20px 0;
+  border-radius: 10px;
+}
+main .banner .banner_title{
+position: absolute;
+color: #8D7B68;
+font-weight: bolder;
+font-size: 40px;
+left: 50%;
+transform: translate(-50% , -120%);
+}
+.sent{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  width: 50px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  background-color: #ED2424;
+  color: #fff;
+}
+.footer{
+  margin-top: 160px;
+} 
+.pic{
+  position: absolute;
+  left: 0px;
+  bottom: -160px;
+
+}
+.pic2{
+  position: absolute;
+  left: 1300px;
+  bottom: 170px;
+  transform: rotate(-65deg);
+}
+.index_footer_wrapper{
+  height: 10px;
+}
+.decorate{
+  width: 1400px;
+}
 @media (max-width: 380px) { 
-  .main{
-    margin-top: 200px;
-  }
-  .name{
+  main{
+    margin-right: 60px;
+    margin-top: 130px;
+  }  
+  .note textarea{
     flex-direction: column;
     display: flex;
+    width: 250px;
+    height: 180px;
+    margin-left: 420px;
   }
+  .banner{
+    margin-right: 400px;
+  }
+  main .banner .banner_title{
+    font-size: 20px;
+    margin-left: -40px;
+    width: 220px;
+  }
+  .name, .phone{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+  .name input, .phone input {
+    gap: 20px;
+    display: grid;
+    height: 8px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    width: 250px;
+    padding: 15px;
+    margin: 0 0 0 420px;
+    border-radius: 10px;
+  }
+  .number{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .note{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .number input{
+    flex-direction: column;
+    display: flex;
+    margin: 0 0 0 450px;
+    width: 250px;
+    height: 13px;
+    margin-left: 420px;
+  }
+
   .input{
     width: 500px;
     border-radius: 5px;
@@ -13,63 +133,11 @@
     margin: 10px 10px 10px 10px;
     height: 30px;
   }
+  .sent{
+    margin-left: 400px;
+    font-size: 10px;
+  }
+  .decorate{
+    display: none;
+  }
 }
-
-main{
-    position: relative;
-    top: 200px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    }
-    main .banner .banner_title{
-    position: absolute;
-    color: #8D7B68;
-    font-weight: bolder;
-    font-size: 30px;
-    left: 50%;
-    transform: translate(-50% , -120%);
-    }
-    div.contact_title{
-    width: 880px;
-    display: inline-block;
-    font-size: 24px;
-    color: rgb(227, 141, 32);
-    }
-    input{
-      display: inline-block;
-      width: 250px;
-      border-radius: 5px;
-      border: 1px solid gray;
-      margin: 10px 10px 10px 10px;
-      height: 30px;
-    }
-    .number input{
-      width: 530px;
-      height: 30px;
-    }
-    .note textarea{
-      width: 535px;        
-      height: 200px;
-    }
-    .button{
-      background-color: #8D7B68;
-    }
-    .footer{
-      margin-top: 160px;
-    } 
-    .pic{
-      position: absolute;
-     left: 0px;
-      bottom: -160px;
-
-    }
-    .pic2{
-      position: absolute;
-      left: 1300px;
-      bottom: 170px;
-      transform: rotate(-65deg);
-    }
-    .footer{
-      margin-top: 342px;
-    }
